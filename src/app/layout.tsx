@@ -1,9 +1,9 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { ThemeProvider } from "@/context/theme.context";
 import type { Metadata } from "next";
 import { Alegreya, Mulish } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider, useTheme } from "@/context/theme.context";
 
 const mulish = Mulish({ subsets: ["latin"], variable: "--font-mulish" });
 const alegreya = Alegreya({ subsets: ["latin"], variable: "--font-alegreya" });
