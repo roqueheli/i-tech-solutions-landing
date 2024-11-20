@@ -13,7 +13,12 @@ const config: Config = {
       fontFamily: {
         title: ['var(--font-alegreya)'],
         body: ['var(--font-mulish)']
-      }
+      },
+      screens: {
+        xs: '687px',
+        sm: '855px',
+        md: '1163px',
+      },
     }
   },
   fontSize: {
