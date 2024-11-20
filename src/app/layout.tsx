@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Alegreya, Mulish } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Menu/Navbar";
 import Footer from "@/components/Footer";
 
 const mulish = Mulish({ subsets: ["latin"], variable: "--font-mulish" });

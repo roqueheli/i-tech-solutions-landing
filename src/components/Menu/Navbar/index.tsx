@@ -4,8 +4,8 @@ import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 import { GrServices } from "react-icons/gr";
 import { MdOutlineHub, MdOutlinePermContactCalendar } from "react-icons/md";
+import Menu from "..";
 import HamburgerMenu from "../HamburgerMenu";
-import Menu from "../Menu";
 
 const LINKS = [
   { title: "Inicio", href: "/", icon: AiOutlineHome },
@@ -14,9 +14,9 @@ const LINKS = [
   { title: "Contacto", href: "/contact", icon: MdOutlinePermContactCalendar },
 ];
 
-type Props = {};
+type NavbarProps = {};
 
-const Navbar = (props: Props) => {
+const Navbar = (props: NavbarProps) => {
   return (
     <header className="sm:mt-0 mt-40 w-full">
       <nav className="flex justify-between items-center w-full p-2 mb-2 border-black-200">
