@@ -1,13 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { AiOutlineHome } from "react-icons/ai";
+import { GrServices } from "react-icons/gr";
+import { MdOutlineHub, MdOutlinePermContactCalendar } from "react-icons/md";
 import HamburgerMenu from "../HamburgerMenu";
 import Menu from "../Menu";
 
 const LINKS = [
-  { title: "Inicio", href: "/" },
-  { title: "IT Services", href: "/it-services" },
-  { title: "Outsourcing", href: "/outsourcing" },
-  { title: "Contacto", href: "/contact" },
+  { title: "Inicio", href: "/", icon: AiOutlineHome },
+  { title: "IT Services", href: "/it-services", icon: GrServices },
+  { title: "Outsourcing", href: "/outsourcing", icon: MdOutlineHub },
+  { title: "Contacto", href: "/contact", icon: MdOutlinePermContactCalendar },
 ];
 
 type Props = {};

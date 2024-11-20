@@ -1,60 +1,91 @@
 "use client";
-import React, { useState } from "react";
-import Link from "next/link";
 import { LinkType } from "@/types/link.types";
+import Link from "next/link";
+import React, { FC, useEffect, useState } from "react";
+import { AiOutlineMenu, AiOutlineClose, AiOutlineHome } from "react-icons/ai";
+import { TbUsersGroup } from "react-icons/tb";
 
-type HamburgerMenuProps = {
+type HamburguerMenuProps = {
   options: LinkType[];
 };
 
-const HamburgerMenu = ({ options }: HamburgerMenuProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const HamburgerMenu: FC<HamburguerMenuProps> = ({ options }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 854) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup para evitar memory leaks
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <>
-      {/* Botón del menú hamburguesa */}
+    <div>
+      {/* Botón de menú hamburguesa */}
       <button
-        className="text-gray-700 mr-8 hover:text-gray-900 focus:outline-none sm:hidden"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        onClick={toggleSidebar}
+        className="block sm:hidden p-2 text-gray-800"
       >
-        <svg
-          className="w-8 h-8"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-          />
-        </svg>
+        <AiOutlineMenu size={24} />
       </button>
 
-      {/* Menú desplegable */}
-      {isMenuOpen && (
-        <div className="absolute top-28 right-0 w-96 bg-gray-100 p-4 md:hidden sm:hidden">
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 right-0 h-full bg-gray-200 shadow-lg transition-transform transform duration-1000 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } w-2/4 sm:hidden md:hidden z-50`}
+      >
+        {/* Botón de cerrar */}
+        <button
+          onClick={toggleSidebar}
+          className="absolute top-4 left-4 p-2 text-gray-800"
+        >
+          <AiOutlineClose size={24} />
+        </button>
+
+        {/* Contenido del sidebar */}
+        <nav className="p-4 mt-12 space-y-4">
           {options &&
             options.map((option, index) => (
-              <Link
+              <Link onClick={toggleSidebar}
                 key={`link-menu-${index}`}
                 href={option.href}
-                className="text-center block py-2 hover:text-blue-500"
+                className="flex items-center ml-3 text-left block py-2 hover:text-blue-500"
               >
+                <option.icon className="mr-3" size={20} />
                 {option.title}
               </Link>
             ))}
-          <Link
+          <Link onClick={toggleSidebar}
             href="/jobs-list"
-            className="text-center block py-2 text-blue-500"
+            className="flex ml-3 text-left block py-2 text-blue-500"
           >
+            <TbUsersGroup className="mr-3" size={20} />
             Únete a I-Tech
           </Link>
-        </div>
+        </nav>
+      </div>
+
+      {/* Fondo oscuro al abrir el sidebar */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-30 z-40"
+          onClick={toggleSidebar}
+        ></div>
       )}
-    </>
+    </div>
   );
 };
 
