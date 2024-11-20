@@ -50,7 +50,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <footer className="w-full">
-      <div className="w-full mx-auto px-4 text-gray-600 md:px-8">
+      <div className="w-full mx-auto px-4 md:px-8">
         <div className="justify-between sm:flex">
           <div className="space-y-6">
             <Image
@@ -63,7 +63,7 @@ const Footer = (props: Props) => {
               {footerNavs.links?.map((item, idx) => (
                 <li
                   key={`footer-links-${idx}`}
-                  className="text-gray-800 hover:text-gray-500 duration-150"
+                  className="hover:text-gray-500 duration-150"
                 >
                   <a href={item.href}>{item.name}</a>
                 </li>
@@ -71,13 +71,13 @@ const Footer = (props: Props) => {
             </ul>
           </div>
           <div className="md:mt-0 sm:mt-0 xs:mt-5">
-            <p className="text-gray-700 font-semibold">Síguenos en nuestras redes</p>
+            <p className="font-semibold">Síguenos en nuestras redes</p>
             <div className="flex items-center gap-3 mt-5 sm:block">
               <ul className="flex flex-wrap items-center gap-9 text-sm sm:text-base">
                 {footerNavs.rrss?.map((item, idx) => (
                   <li
                     key={`footer-rrss-${idx}`}
-                    className="text-gray-500 hover:text-blue-400 duration-150"
+                    className="hover:text-blue-400 duration-150"
                   >
                     <Link href={item.href}>
                       <item.icon size={25} />
