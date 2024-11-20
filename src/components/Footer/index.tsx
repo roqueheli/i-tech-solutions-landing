@@ -51,7 +51,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="w-full">
+    <footer className="w-full mt-auto">
       <div className="w-full mx-auto px-4 md:px-8">
         <div className="justify-between sm:flex">
           <div className="space-y-6">
