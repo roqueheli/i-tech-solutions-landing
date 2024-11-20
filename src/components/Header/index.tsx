@@ -6,10 +6,11 @@ import { GrServices } from "react-icons/gr";
 import { MdOutlineHub, MdOutlinePermContactCalendar } from "react-icons/md";
 import Navbar from "./Navbar";
 import HamburgerMenu from "./HamburgerMenu";
+import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
   { title: "Inicio", href: "/", icon: AiOutlineHome },
-  { title: "IT Services", href: "/it-services", icon: GrServices },
+  { title: "IT Services", href: "/services", icon: GrServices },
   { title: "Outsourcing", href: "/outsourcing", icon: MdOutlineHub },
   { title: "Contacto", href: "/contact", icon: MdOutlinePermContactCalendar },
 ];
@@ -49,6 +50,8 @@ const Header = (props: HeaderProps) => {
             Únete a I-Tech
           </p>
         </Link>
+
+        <ThemeToggle />
 
         {/* Menú hamburguesa */}
         <HamburgerMenu options={LINKS} />

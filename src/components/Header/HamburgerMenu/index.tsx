@@ -32,7 +32,7 @@ const HamburgerMenu: FC<HamburguerMenuProps> = ({ options }) => {
   }, []);
 
   return (
-    <div>
+    <>
       {/* Botón de menú hamburguesa */}
       <button
         onClick={toggleSidebar}
@@ -85,7 +85,7 @@ const HamburgerMenu: FC<HamburguerMenuProps> = ({ options }) => {
           onClick={toggleSidebar}
         ></div>
       )}
-    </div>
+    </>
   );
 };
 

@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        title: ['var(--font-alegreya)'],
-        body: ['var(--font-mulish)']
+        title: ['var(--font-poppins)'],
+        body: ['var(--font-alegreya)']
       },
       screens: {
         xs: '687px',
