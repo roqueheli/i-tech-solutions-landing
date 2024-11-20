@@ -2,11 +2,11 @@ import { LinkType } from "@/types/link.types";
 import Image from "next/image";
 import Link from "next/link";
 
-type MenuProps = {
+type NavbarProps = {
   options: LinkType[];
 };
 
-const Menu = ({ options }: MenuProps) => {
+const Navbar = ({ options }: NavbarProps) => {
   return (
     <ul className="flex justify-between items-center w-full px-4 bg-color-white">
       {/* Logo inside menu for smaller screens */}
@@ -46,4 +46,4 @@ const Menu = ({ options }: MenuProps) => {
   );
 };
 
-export default Menu;
+export default Navbar;

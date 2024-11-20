@@ -4,8 +4,8 @@ import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 import { GrServices } from "react-icons/gr";
 import { MdOutlineHub, MdOutlinePermContactCalendar } from "react-icons/md";
-import Menu from "..";
-import HamburgerMenu from "../HamburgerMenu";
+import Navbar from "./Navbar";
+import HamburgerMenu from "./HamburgerMenu";
 
 const LINKS = [
   { title: "Inicio", href: "/", icon: AiOutlineHome },
@@ -14,9 +14,9 @@ const LINKS = [
   { title: "Contacto", href: "/contact", icon: MdOutlinePermContactCalendar },
 ];
 
-type NavbarProps = {};
+type HeaderProps = {};
 
-const Navbar = (props: NavbarProps) => {
+const Header = (props: HeaderProps) => {
   return (
     <header className="sm:mt-0 mt-40 w-full">
       <nav className="flex justify-between items-center w-full p-2 mb-2 border-black-200">
@@ -40,7 +40,7 @@ const Navbar = (props: NavbarProps) => {
 
         {/* Menu */}
         <div className="sm:flex hidden items-center md:w-1/2 w-full justify-center p-2 border border-gray-300 rounded-full relative">
-          <Menu options={LINKS} />
+          <Navbar options={LINKS} />
         </div>
 
         {/* Join I-Tech */}
@@ -57,4 +57,4 @@ const Navbar = (props: NavbarProps) => {
   );
 };
 
-export default Navbar;
+export default Header;
