@@ -3,6 +3,8 @@ import Link from "next/link";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const footerNavs = {
+  textFollowUs: 'Síguenos en nuestras redes',
+  textRightsReseved: '© 2022 I-Tech Solutions Inc. Todos los derechos reservados.',
   links: [
     {
       href: "javascript:void()",
@@ -71,7 +73,7 @@ const Footer = (props: Props) => {
             </ul>
           </div>
           <div className="md:mt-0 sm:mt-0 xs:mt-5">
-            <p className="font-semibold">Síguenos en nuestras redes</p>
+            <p className="font-semibold">{footerNavs.textFollowUs}</p>
             <div className="flex items-center gap-3 mt-5 sm:block">
               <ul className="flex flex-wrap items-center gap-9 text-sm sm:text-base">
                 {footerNavs.rrss?.map((item, idx) => (
@@ -89,7 +91,7 @@ const Footer = (props: Props) => {
           </div>
         </div>
         <div className="mt-10 py-10 border-t md:text-center">
-          <p>© 2022 I-Tech Solutions Inc. Todos los derechos reservados.</p>
+          <p>{footerNavs.textRightsReseved}</p>
         </div>
       </div>
     </footer>
