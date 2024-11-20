@@ -12,14 +12,14 @@ const LINKS = [
   { title: "Inicio", href: "/", icon: AiOutlineHome },
   { title: "IT Services", href: "/services", icon: GrServices },
   { title: "Outsourcing", href: "/outsourcing", icon: MdOutlineHub },
-  { title: "Contacto", href: "/contact", icon: MdOutlinePermContactCalendar },
+  { title: "Contacto", href: "/contact-us", icon: MdOutlinePermContactCalendar },
 ];
 
 type HeaderProps = {};
 
 const Header = (props: HeaderProps) => {
   return (
-    <header className="sm:mt-0 mt-40 w-full">
+    <header className="sm:mt-0 mt-20 w-full">
       <nav className="flex justify-between items-center w-full p-2 mb-2 border-black-200">
         {/* Logo */}
         <Link className="sm:hidden md:block w-1/4 px-3" href="/">
@@ -45,13 +45,14 @@ const Header = (props: HeaderProps) => {
         </div>
 
         {/* Join I-Tech */}
-        <Link className="hidden md:flex w-1/4 justify-end" href="/jobs-list">
-          <p className="rounded-full hover:bg-gray-200 p-3 text-blue-500 transition duration-150 ease-out hover:ease-in">
-            Únete a I-Tech
-          </p>
-        </Link>
-
-        <ThemeToggle />
+        <div className="hidden md:flex w-1/4 justify-end">
+          <Link className="mr-1" href="/jobs-list">
+            <p className="rounded-full hover:bg-gray-200 p-3 text-blue-500 transition duration-150 ease-out hover:ease-in">
+              Únete a I-Tech
+            </p>
+          </Link>
+          <ThemeToggle />
+        </div>
 
         {/* Menú hamburguesa */}
         <HamburgerMenu options={LINKS} />
