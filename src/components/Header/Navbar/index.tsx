@@ -1,6 +1,7 @@
 import { LinkType } from "@/types/link.types";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeToggle from "../ThemeToggle";
 
 type NavbarProps = {
   options: LinkType[];
@@ -41,6 +42,9 @@ const Navbar = ({ options }: NavbarProps) => {
             Únete a I-Tech
           </p>
         </Link>
+      </li>
+      <li className="md:hidden p-1">
+        <ThemeToggle />
       </li>
     </ul>
   );
