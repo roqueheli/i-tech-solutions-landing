@@ -3,7 +3,7 @@ import ContactUsInfo from "@/components/ContactUS/Info";
 
 type Props = {};
 
-const ContactUs = (props: Props) => {
+const ContactUsPage = (props: Props) => {
   return (
     <main className="py-14 w-full mb-10">
       <div className="max-w-screen-xl w-full mx-auto px-4 md:px-8">
@@ -18,4 +18,4 @@ const ContactUs = (props: Props) => {
   );
 };
 
-export default ContactUs;
+export default ContactUsPage;
