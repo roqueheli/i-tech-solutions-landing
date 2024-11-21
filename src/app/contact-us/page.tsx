@@ -3,9 +3,9 @@ import ContactUsInfo from "@/components/ContactUS/Info";
 
 type Props = {};
 
-const ContactUs = (props: Props) => {
+const ContactUsPage = (props: Props) => {
   return (
-    <main className="py-14 w-full mb-10">
+    <section className="py-14 w-full mb-10">
       <div className="max-w-screen-xl w-full mx-auto px-4 md:px-8">
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
           <ContactUsInfo />
@@ -14,8 +14,8 @@ const ContactUs = (props: Props) => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
-export default ContactUs;
+export default ContactUsPage;
