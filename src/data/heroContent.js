@@ -30,6 +30,11 @@ export const heroContent = {
       logo:
         "https://entel.cdn.modyo.com/libraries/recursos/src/icons/brands/logos/entel-60-azul.svg",
     },
+    {
+      name: "Globant",
+      logo:
+        "https://www.globant.com/themes/custom/globant_corp_theme/images/2019/globant-logo-dark.svg",
+    },
   ],
 };
 

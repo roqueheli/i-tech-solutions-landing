@@ -50,7 +50,7 @@ const ContactUsForm = () => {
           fieldName="email"
           label="Correo electrónico"
           styles={"mt-4"}
-          placeholder="contact-us@i-tech.com"
+          placeholder="contact-us@itech.com"
           requiredField={true}
         />
         <InputField
@@ -58,7 +58,7 @@ const ContactUsForm = () => {
           fieldName="enterprise"
           label="Nombre de la empresa"
           styles={"mt-4"}
-          placeholder="I-Tech Solutions"
+          placeholder="iTech Solutions"
           requiredField={true}
         />
         <InputField

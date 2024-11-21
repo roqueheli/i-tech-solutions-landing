@@ -1,5 +1,6 @@
 "use client";
-import { heroContent2 } from "@/data/heroContent";
+import { heroContent, heroContent2 } from "@/data/heroContent";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -10,7 +11,7 @@ const Hero2 = (props: HeroProps) => {
 
   return (
     <section>
-      <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 md:px-8 xl:flex">
+      <div className="max-w-screen-xl mx-auto px-4 py-20 gap-12 md:px-8 xl:flex">
         <div className="space-y-5 max-w-2xl mx-auto text-center xl:text-left">
           <h1 className="text-4xl font-extrabold mx-auto md:text-5xl">
             {heroContent2.title}
@@ -63,7 +64,7 @@ const Hero2 = (props: HeroProps) => {
           ></div>
           <div className="px-4 relative">
             <button
-              className="w-12 h-12 mb-5 rounded-full duration-150 bg-gray-800 hover:bg-gray-700 text-white"
+              className="w-12 h-12 mb-5 rounded-full duration-150 hover:bg-yellow-700 text-white"
               onClick={() => setVideoPopUp(false)}
             >
               <svg
@@ -90,6 +91,29 @@ const Hero2 = (props: HeroProps) => {
       ) : (
         ""
       )}
+            <footer className="px-4 md:px-8">
+        <p className="text-center text-sm font-semibold">
+          Confiado por empresas líderes
+        </p>
+        <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
+          {/* Logos o íconos representativos */}
+          {heroContent.trusted.map((trusted, index) => (
+            <div
+              key={`trusted-${index}`}
+              className="w-24 h-12 flex items-center justify-center rounded"
+            >
+              <Image
+                className="transition duration-150 ease-in-out hover:ease-in object-contain"
+                src={trusted.logo}
+                alt={trusted.name}
+                width={120}
+                height={120}
+              />
+              {/* {trusted.logo} */}
+            </div>
+          ))}
+        </div>
+      </footer>
     </section>
   );
 };

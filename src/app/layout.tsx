@@ -9,7 +9,7 @@ const mulish = Mulish({ subsets: ["latin"], variable: "--font-mulish" });
 const alegreya = Alegreya({ subsets: ["latin"], variable: "--font-alegreya" });
 
 export const metadata: Metadata = {
-  title: "I-Tech Solutions",
+  title: "iTech Solutions",
   description: "Tecnología en tus manos",
 };
 

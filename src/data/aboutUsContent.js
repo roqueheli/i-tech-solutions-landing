@@ -1,9 +1,9 @@
 export const aboutUsContent = {
-  title: "Bienvenido a I-Tech Solutions",
+  title: "Bienvenido a iTech Solutions",
   intro: {
     text:
       "En {highlight}, rompemos paradigmas al ofrecer soluciones tecnológicas innovadoras y servicios de excelencia, diseñados para impulsar el éxito empresarial en la era digital.",
-    highlight: "I-Tech Solutions",
+    highlight: "iTech Solutions",
   },
   sections: [
     {
@@ -53,5 +53,5 @@ export const aboutUsContent = {
   ],
   closing:
     "¡Explora infinitas oportunidades con {highlight} y lleva tu negocio al siguiente nivel!",
-  closingHighlight: "I-Tech Solutions",
+  closingHighlight: "iTech Solutions",
 };

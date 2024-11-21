@@ -13,7 +13,7 @@ const index = (props: Props) => {
               Nuestros servicios
             </h3>
             <p className="mt-3 text-center">
-              En I-Tech Soluciones, brindamos una amplia variedad de servicios
+              En iTech Soluciones, brindamos una amplia variedad de servicios
               enfocados en mejorar el rendimiento, la seguridad y la eficiencia
               de tus plataformas y aplicaciones.
             </p>

@@ -16,7 +16,7 @@ const Navbar = ({ options }: NavbarProps) => {
           <Image
             className="md:hidden transition duration-150 ease-in-out hover:ease-in object-contain"
             src="/it-logo.png"
-            alt="I-Tech logomark"
+            alt="iTech logomark"
             width={40}
             height={40}
           />
@@ -39,11 +39,11 @@ const Navbar = ({ options }: NavbarProps) => {
           </li>
         ))}
 
-      {/* Join I-Tech inside menu */}
+      {/* Join iTech inside menu */}
       <li className="md:hidden p-1 flex-shrink-0">
         <Link href="/jobs-list">
           <p className="text-md rounded-full bg-black p-3 text-white hover:text-yellow-200 transition duration-150 ease-in-out text-center whitespace-nowrap">
-            Únete a I-Tech
+            Únete a iTech
           </p>
         </Link>
       </li>
