@@ -73,7 +73,7 @@ const HamburgerMenu: FC<HamburguerMenuProps> = ({ options }) => {
             className="flex ml-3 text-left block py-2 text-blue-500"
           >
             <TbUsersGroup className="mr-3" size={20} />
-            Únete a I-Tech
+            Únete a iTech
           </Link>
         </nav>
       </div>

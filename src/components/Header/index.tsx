@@ -27,14 +27,14 @@ const Header = (props: HeaderProps) => {
           <Image
             className="hidden md:block transition duration-150 ease-in-out hover:ease-in flex-shrink-0"
             src="/it-logo.png"
-            alt="I-Tech logomark"
+            alt="iTech logomark"
             width={45}
             height={45}
           />
           <Image
             className="md:hidden transition duration-150 ease-in-out hover:ease-in flex-shrink-0"
             src="/it-logo-gold.png"
-            alt="I-Tech logomark"
+            alt="iTech logomark"
             width={200}
             height={200}
           />
@@ -45,11 +45,11 @@ const Header = (props: HeaderProps) => {
           <Navbar options={LINKS} />
         </div>
 
-        {/* Join I-Tech */}
+        {/* Join iTech */}
         <div className="hidden md:flex w-1/4 justify-end">
           <Link className="mr-1" href="/jobs-list">
             <p className="rounded-full hover:bg-gray-200 p-3 text-blue-500 transition duration-150 ease-out hover:ease-in">
-              Únete a I-Tech
+              Únete a iTech
             </p>
           </Link>
           <ThemeToggle />
