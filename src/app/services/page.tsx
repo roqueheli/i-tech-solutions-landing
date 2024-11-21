@@ -6,7 +6,7 @@ import { SiGotomeeting, SiIbm } from "react-icons/si";
 
 type Props = {};
 
-const Services = (props: Props) => {
+const ServicesPage = (props: Props) => {
   const features = [
     {
       icon: GrTechnology,
@@ -78,4 +78,4 @@ const Services = (props: Props) => {
   );
 };
 
-export default Services;
+export default ServicesPage;
