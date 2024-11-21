@@ -1,12 +1,12 @@
 "use client";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { FormProvider, Resolver, useForm } from "react-hook-form";
-import InputField from "./InputField";
-import SubmitButton from "./SubmitButton";
+import InputField from "../../Form/InputField";
+import SubmitButton from "../../Form/SubmitButton";
 import ContactUsScheme from "@/schemes/contact-us.scheme";
 import { useState } from "react";
 import { WrongDataError } from "@/services/commons/http.errors";
-import TextAreaField from "./TextAreaField";
+import TextAreaField from "../../Form/TextAreaField";
 
 type ContactUsFormData = {
   name: string;
