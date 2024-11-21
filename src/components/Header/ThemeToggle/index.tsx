@@ -8,7 +8,7 @@ const ThemeToggle: FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 border rounded-full"
+      className="p-4 border rounded-full flex-shrink-0"
     >
       {isDarkMode ? <MdOutlineLightMode /> : <MdDarkMode />}
     </button>

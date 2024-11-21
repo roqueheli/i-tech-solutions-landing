@@ -12,6 +12,7 @@ const LINKS = [
   { title: "Inicio", href: "/", icon: AiOutlineHome },
   { title: "IT Services", href: "/services", icon: GrServices },
   { title: "Outsourcing", href: "/outsourcing", icon: MdOutlineHub },
+  { title: "¿Quienes somos?", href: "/about-us", icon: MdOutlinePermContactCalendar },
   { title: "Contacto", href: "/contact-us", icon: MdOutlinePermContactCalendar },
 ];
 
@@ -24,14 +25,14 @@ const Header = (props: HeaderProps) => {
         {/* Logo */}
         <Link className="sm:hidden md:block w-1/4 px-3" href="/">
           <Image
-            className="hidden md:block transition duration-150 ease-in-out hover:ease-in"
+            className="hidden md:block transition duration-150 ease-in-out hover:ease-in flex-shrink-0"
             src="/it-logo.png"
             alt="I-Tech logomark"
             width={45}
             height={45}
           />
           <Image
-            className="md:hidden transition duration-150 ease-in-out hover:ease-in"
+            className="md:hidden transition duration-150 ease-in-out hover:ease-in flex-shrink-0"
             src="/it-logo-gold.png"
             alt="I-Tech logomark"
             width={200}
@@ -40,7 +41,7 @@ const Header = (props: HeaderProps) => {
         </Link>
 
         {/* Menu */}
-        <div className="sm:flex hidden items-center md:w-1/2 w-full justify-center p-2 border border-gray-300 rounded-full relative">
+        <div className="overflow-hidden sm:flex hidden items-center md:w-1/2 w-full justify-center p-2 border border-gray-300 rounded-full relative">
           <Navbar options={LINKS} />
         </div>
 
