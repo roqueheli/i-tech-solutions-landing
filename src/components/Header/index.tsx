@@ -1,20 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineHome } from "react-icons/ai";
-import { GrServices } from "react-icons/gr";
-import { MdOutlineHub, MdOutlinePermContactCalendar } from "react-icons/md";
 import Navbar from "./Navbar";
 import HamburgerMenu from "./HamburgerMenu";
 import ThemeToggle from "./ThemeToggle";
-
-const LINKS = [
-  { title: "Inicio", href: "/", icon: AiOutlineHome },
-  { title: "IT Services", href: "/services", icon: GrServices },
-  { title: "Outsourcing", href: "/outsourcing", icon: MdOutlineHub },
-  { title: "¿Quienes somos?", href: "/about-us", icon: MdOutlinePermContactCalendar },
-  { title: "Contacto", href: "/contact-us", icon: MdOutlinePermContactCalendar },
-];
+import { headerContent } from "@/data/header.content";
 
 type HeaderProps = {};
 
@@ -42,7 +32,7 @@ const Header = (props: HeaderProps) => {
 
         {/* Menu */}
         <div className="overflow-hidden sm:flex hidden items-center md:w-1/2 w-full justify-center p-2 border border-gray-300 rounded-full relative">
-          <Navbar options={LINKS} />
+          <Navbar options={headerContent} />
         </div>
 
         {/* Join iTech */}
@@ -56,7 +46,7 @@ const Header = (props: HeaderProps) => {
         </div>
 
         {/* Menú hamburguesa */}
-        <HamburgerMenu options={LINKS} />
+        <HamburgerMenu options={headerContent} />
       </nav>
     </header>
   );
