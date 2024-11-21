@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { heroContent } from "@/data/heroContent";
+import { heroContent } from "@/data/hero.content";
 import Image from "next/image";
 
 type HeroProps = {};

@@ -1,5 +1,5 @@
 "use client";
-import { heroContent, heroContent2 } from "@/data/heroContent";
+import { heroContent, heroContent2 } from "@/data/hero.content";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
