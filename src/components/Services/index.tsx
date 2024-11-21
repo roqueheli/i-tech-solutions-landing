@@ -1,5 +1,5 @@
 import React from "react";
-import { servicesContent } from "@/data/servicesContent";
+import { servicesContent } from "@/data/services.content";
 
 type Props = {};
 

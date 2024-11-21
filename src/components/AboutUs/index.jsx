@@ -1,4 +1,4 @@
-import { aboutUsContent } from "@/data/aboutUsContent";
+import { aboutUsContent } from "@/data/about-us.content";
 
 const AboutUs = () => {
   return (
