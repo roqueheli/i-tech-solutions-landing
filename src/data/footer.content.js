@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 export const footerContent = {
   textFollowUs: "Síguenos en nuestras redes",
   textRightsReseved:
-    "© 2022 iTech Solutions Inc. Todos los derechos reservados.",
+    "© 2024 iTech Solutions Inc. Todos los derechos reservados.",
   links: [
     {
       href: "javascript:void()",
