@@ -1,9 +1,7 @@
 import React from "react";
 import { servicesContent } from "@/data/services.content";
 
-type Props = {};
-
-const index = (props: Props) => {
+const index = () => {
   return (
     <section className="flex items-center justify-center mb-16">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">

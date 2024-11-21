@@ -2,9 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { footerContent } from "@/data/footer.content";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className="w-full mt-auto">
       <div className="w-full mx-auto px-4 md:px-8">

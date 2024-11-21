@@ -1,9 +1,7 @@
 import React from "react";
 import Technologies from "@/components/Technologies";
 
-type Props = {};
-
-const TechnologiesPage = (props: Props) => {
+const TechnologiesPage = () => {
   return <Technologies />;
 };
 

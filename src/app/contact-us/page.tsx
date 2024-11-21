@@ -1,9 +1,7 @@
 import ContactUsForm from "@/components/ContactUS/Form";
 import ContactUsInfo from "@/components/ContactUS/Info";
 
-type Props = {};
-
-const ContactUsPage = (props: Props) => {
+const ContactUsPage = () => {
   return (
     <section className="py-14 w-full mb-10">
       <div className="max-w-screen-xl w-full mx-auto px-4 md:px-8">

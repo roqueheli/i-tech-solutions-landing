@@ -1,7 +1,6 @@
 import Services from '@/components/Services';
-type Props = {};
 
-const ServicesPage = (props: Props) => {
+const ServicesPage = () => {
   return (
     <Services />
   );

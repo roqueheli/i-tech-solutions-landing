@@ -1,11 +1,7 @@
-import React from "react";
 import { technologiesContent } from "@/data/technologies.content";
-import Link from "next/link";
 import TechCard from "./TechCard";
 
-type Props = {};
-
-const Technologies = (props: Props) => {
+const Technologies = () => {
   return (
     <section className="flex items-center justify-center mb-16">
       <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">

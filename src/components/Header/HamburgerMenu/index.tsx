@@ -1,8 +1,8 @@
 "use client";
 import { LinkType } from "@/types/link.types";
 import Link from "next/link";
-import React, { FC, useEffect, useState } from "react";
-import { AiOutlineMenu, AiOutlineClose, AiOutlineHome } from "react-icons/ai";
+import { FC, useEffect, useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { TbUsersGroup } from "react-icons/tb";
 
 type HamburguerMenuProps = {

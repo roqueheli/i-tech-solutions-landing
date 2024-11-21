@@ -4,7 +4,7 @@ import { FieldValues, useFormContext } from "react-hook-form";
 type InputFieldProps<T extends FieldValues> = {
   type: "text" | "password" | "tel" | "number" | "email";
   label?: string;
-  fieldName: string;
+  fieldName: keyof T;
   placeholder?: string;
   styles?: string;
   requiredField?: boolean | false;
@@ -20,12 +20,12 @@ const InputField = <T extends FieldValues>({ type, fieldName, label, placeholder
         {requiredField && <p className="ml-1 text-red-500">*</p>}
       </div>
       <input
-        {...register(fieldName)}
+        {...register(fieldName as string)}
         className="p-2 mt-2 rounded bg-gray-50 border border-gray-200"
         type={type}
         placeholder={placeholder}
       />
-      {errors?.[fieldName] && (
+      {errors?.[fieldName as string] && (
         <div className="text-red-600 mb-4">Este campo es obligatorio</div>
       )}
     </div>

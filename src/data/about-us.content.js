@@ -2,7 +2,7 @@ export const aboutUsContent = {
   title: "Bienvenido a iTech Solutions",
   intro: {
     text:
-      "En {highlight}, rompemos paradigmas al ofrecer soluciones tecnológicas innovadoras y servicios de excelencia, diseñados para impulsar el éxito empresarial en la era digital.",
+      "{highlight}, rompemos paradigmas al ofrecer soluciones tecnológicas innovadoras y servicios de excelencia, diseñados para impulsar el éxito empresarial en la era digital.",
     highlight: "iTech Solutions",
   },
   sections: [
