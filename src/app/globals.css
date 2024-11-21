@@ -38,14 +38,14 @@
 
   .button-primary {
     @apply rounded-md;
-    @apply bg-blue-400;
+    @apply bg-yellow-600;
     @apply text-white;
     @apply px-6;
     @apply py-2;
   }
 
   .button-primary:hover {
-    @apply bg-blue-500;
+    @apply bg-yellow-500;
   }
 
   .button-secondary {
