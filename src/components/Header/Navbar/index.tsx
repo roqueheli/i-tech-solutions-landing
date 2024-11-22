@@ -69,7 +69,7 @@ const Navbar = ({ options }: NavbarProps) => {
       {/* Join iTech inside menu */}
       <li className="md:hidden p-1 flex-shrink-0">
         <Link href="/jobs-list?type=jobs-list">
-          <p className="text-md rounded-full bg-black p-3 text-white hover:text-yellow-200 transition duration-150 ease-in-out text-center whitespace-nowrap">
+          <p className="text-md rounded-full bg-gray-500 p-3 text-white hover:text-yellow-300 transition duration-150 ease-in-out text-center whitespace-nowrap">
             Únete a iTech
           </p>
         </Link>
