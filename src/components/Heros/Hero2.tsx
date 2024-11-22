@@ -17,13 +17,13 @@ const Hero2 = () => {
           <p className="max-w-xl mx-auto xl:mx-0">{heroContent2.info}</p>
           <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 xl:justify-start">
             <Link
-              href={heroContent2.button1.href}
+              href={`/${heroContent2.button1.href}?type=${heroContent2.button1.href}`}
               className="button-primary flex items-center justify-center gap-x-2 py-2 px-4 font-medium duration-150 hover:bg-yellow-700 active:bg-yellow-900 rounded-lg md:inline-flex"
             >
               {heroContent2.button1.title}
             </Link>
             <Link
-              href={heroContent2.button2.href}
+              href={`/${heroContent2.button2.href}?type=${heroContent2.button2.href}`}
               className="flex items-center justify-center gap-x-2 py-2 px-4 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg md:inline-flex"
             >
               {heroContent2.button2.title}
@@ -37,8 +37,8 @@ const Hero2 = () => {
               src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               className="rounded-lg"
               alt=""
-              width={162}
-              height={162}
+              width={500}
+              height={500}
             />
             <button
               className="absolute w-16 h-16 rounded-full inset-0 m-auto duration-150 bg-yellow-500 hover:bg-yellow-600 ring-offset-2 focus:ring text-white"
@@ -91,9 +91,9 @@ const Hero2 = () => {
       ) : (
         ""
       )}
-            <footer className="px-4 md:px-8">
+      <footer className="px-4 md:px-8">
         <p className="text-center text-sm font-semibold">
-          Confiado por empresas líderes
+          Empresas líderes confían en nosotros
         </p>
         <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
           {/* Logos o íconos representativos */}
@@ -109,7 +109,6 @@ const Hero2 = () => {
                 width={120}
                 height={120}
               />
-              {/* {trusted.logo} */}
             </div>
           ))}
         </div>

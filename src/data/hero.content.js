@@ -46,12 +46,12 @@ export const heroContent2 = {
   highlight: "Más de 200 operaciones con éxito",
   button1: {
     title: "Nuestros servicios",
-    href: "/services",
+    href: "services",
     icon: null,
   },
   button2: {
     title: "Contáctanos",
-    href: "/contact-us",
+    href: "contact-us",
     icon: GoArrowRight,
   },
 };
