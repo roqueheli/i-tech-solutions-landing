@@ -32,18 +32,23 @@ interface ThemeProviderProps {
 
 // Proveedor del contexto
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    // Recuperar el estado inicial desde localStorage
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+
+  useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "dark" ? true : false;
-  });
+    if (savedTheme === "dark") {
+      setIsDarkMode(true);
+    }
+  }, []);
 
   // Alternar entre modo oscuro y claro
   const toggleTheme = () => {
     setIsDarkMode((prev) => {
       const newMode = !prev;
       // Guardar el tema en localStorage
-      localStorage.setItem("theme", newMode ? "dark" : "light");
+      if (typeof window !== "undefined") {
+        localStorage.setItem("theme", newMode ? "dark" : "light");
+      }
       return newMode;
     });
   };

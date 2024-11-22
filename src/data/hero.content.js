@@ -16,9 +16,9 @@ export const heroContent = {
   },
   trusted: [
     {
-      name: "Banco Falabella",
+      name: "Globant",
       logo:
-        "https://www.bancofalabella.cl/_next/static/media/logo.686cc6de.svg",
+        "https://www.globant.com/themes/custom/globant_corp_theme/images/2019/globant-logo-dark.svg",
     },
     {
       name: "Scotiabank",
@@ -26,14 +26,14 @@ export const heroContent = {
         "https://cdn.aglty.io/scotiabank-chile/2024/header/logo-scotiabank-red.svg",
     },
     {
+      name: "Banco Falabella",
+      logo:
+        "https://www.bancofalabella.cl/_next/static/media/logo.686cc6de.svg",
+    },
+    {
       name: "Entel",
       logo:
         "https://entel.cdn.modyo.com/libraries/recursos/src/icons/brands/logos/entel-60-azul.svg",
-    },
-    {
-      name: "Globant",
-      logo:
-        "https://www.globant.com/themes/custom/globant_corp_theme/images/2019/globant-logo-dark.svg",
     },
   ],
 };

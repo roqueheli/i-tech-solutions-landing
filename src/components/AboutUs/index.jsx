@@ -1,4 +1,4 @@
-import { aboutUsContent } from "@/data/aboutUsContent";
+import { aboutUsContent } from "@/data/about-us.content";
 
 const AboutUs = () => {
   return (
@@ -12,7 +12,7 @@ const AboutUs = () => {
           <span className="font-semibold text-yellow-500">
             {aboutUsContent.intro.highlight}
           </span>
-          , {aboutUsContent.intro.text.replace("{highlight}", "")}
+           {aboutUsContent.intro.text.replace("{highlight}", "")}
         </p>
         {aboutUsContent.sections.map((section, index) => (
           <div key={index} className="mt-10">

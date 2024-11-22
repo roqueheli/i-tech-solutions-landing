@@ -1,8 +1,6 @@
 import AboutUs from "@/components/AboutUs";
 
-type Props = {};
-
-const AboutUsPage = (props: Props) => {
+const AboutUsPage = () => {
   return <AboutUs />;
 };
 

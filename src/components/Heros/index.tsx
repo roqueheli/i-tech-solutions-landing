@@ -1,10 +1,8 @@
 import Link from "next/link";
-import { heroContent } from "@/data/heroContent";
+import { heroContent } from "@/data/hero.content";
 import Image from "next/image";
 
-type HeroProps = {};
-
-const Hero = (props: HeroProps) => {
+const Hero = () => {
   return (
     <section className="py-10">
       <div className="max-w-screen-xl mx-auto gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
@@ -31,10 +29,12 @@ const Hero = (props: HeroProps) => {
           </div>
         </article>
         <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1573164713619-24c711fe7878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
             className="rounded-md md:rounded-tl-[108px]"
             alt="Servicios informáticos gestionados"
+            width={162}
+            height={162}
           />
         </div>
       </div>

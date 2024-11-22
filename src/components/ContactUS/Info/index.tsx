@@ -1,9 +1,7 @@
 import React from "react";
-import { contactContent } from "@/data/contactContent";
+import { contactContent } from "@/data/contact-us.content";
 
-type Props = {};
-
-const ContactUsInfo = (props: Props) => {
+const ContactUsInfo = () => {
   return (
     <div className="max-w-lg space-y-3">
       <h3 className="text-yellow-600 font-semibold">Contact</h3>

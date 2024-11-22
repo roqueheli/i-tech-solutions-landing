@@ -5,9 +5,9 @@ import { MdOutlineHub, MdOutlinePermContactCalendar } from "react-icons/md";
 export const headerContent = [
   { title: "Inicio", href: "/", icon: AiOutlineHome },
   { title: "IT Services", href: "/services", icon: GrServices },
-  { title: "Tecnologias", href: "/technologies", icon: MdOutlineHub },
+  { title: "Tecnologías", href: "/technologies", icon: MdOutlineHub },
   {
-    title: "¿Quienes somos?",
+    title: "¿Quiénes somos?",
     href: "/about-us",
     icon: MdOutlinePermContactCalendar,
   },

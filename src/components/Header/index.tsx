@@ -6,9 +6,7 @@ import HamburgerMenu from "./HamburgerMenu";
 import ThemeToggle from "./ThemeToggle";
 import { headerContent } from "@/data/header.content";
 
-type HeaderProps = {};
-
-const Header = (props: HeaderProps) => {
+const Header = () => {
   return (
     <header className="sm:mt-0 mt-20 w-full">
       <nav className="flex justify-between items-center w-full p-2 mb-2 border-black-200">

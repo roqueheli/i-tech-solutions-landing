@@ -23,7 +23,9 @@ const ContactUsForm = () => {
   });
 
   const { handleSubmit } = methods;
-  const onSubmit = async (data: ContactUsFormData) => {
+
+  // data: ContactUsFormData
+  const onSubmit = async () => {
     try {
       setServerError(null);
     } catch (error) {

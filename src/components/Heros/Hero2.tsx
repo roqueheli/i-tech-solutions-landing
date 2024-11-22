@@ -1,12 +1,10 @@
 "use client";
-import { heroContent, heroContent2 } from "@/data/heroContent";
+import { heroContent, heroContent2 } from "@/data/hero.content";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-type HeroProps = {};
-
-const Hero2 = (props: HeroProps) => {
+const Hero2 = () => {
   const [isVideoPoppedUp, setVideoPopUp] = useState(false);
 
   return (
@@ -35,10 +33,12 @@ const Hero2 = (props: HeroProps) => {
         </div>
         <div className="flex-1 max-w-xl mx-auto mt-14 xl:mt-0">
           <div className="relative">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               className="rounded-lg"
               alt=""
+              width={162}
+              height={162}
             />
             <button
               className="absolute w-16 h-16 rounded-full inset-0 m-auto duration-150 bg-yellow-500 hover:bg-yellow-600 ring-offset-2 focus:ring text-white"
