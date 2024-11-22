@@ -18,7 +18,7 @@ export const footerContent = {
       name: "Privacidad",
     },
     {
-      href: "/about-us",
+      href: "about-us",
       name: "Sobre nosotros",
     },
   ],

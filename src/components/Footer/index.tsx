@@ -20,7 +20,7 @@ const Footer = () => {
                   key={`footer-links-${idx}`}
                   className="hover:text-gray-500 duration-150"
                 >
-                  <a href={item.href}>{item.name}</a>
+                  <a href={`/${item.href}?type=${item.href}`}>{item.name}</a>
                 </li>
               ))}
             </ul>
