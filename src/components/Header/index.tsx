@@ -1,10 +1,10 @@
 "use client";
+import { headerContent } from "@/data/header.content";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "./Navbar";
 import HamburgerMenu from "./HamburgerMenu";
+import Navbar from "./Navbar";
 import ThemeToggle from "./ThemeToggle";
-import { headerContent } from "@/data/header.content";
 
 const Header = () => {
   return (
